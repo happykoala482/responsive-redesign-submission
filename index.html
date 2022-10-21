@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<link href='https://rsms.me/inter/inter.css' rel='stylesheet'>
+<html lang="en">
+  <head>
+    <title>Personas & Storyboard</title>
+    <!-- import javascript variables and functions -->
+    <script src="app.js" defer></script>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <div>
+        <h1>Overview</h1>
+        <p>The aim of this project was to practice the workflow of redesigning a simple website. After finding a candidate website, I analyzed and identified flaws in the existing interface, created low-fidelity and high-fidelity prototypes for various screen sizes, and then built a responsive website based on those prototypes.</p>
+    </div>
+    <div>
+        <h1>Identifying Usability Problems</h1>
+        <h2>Picking a Web Page</h2>
+        <p>I chose to use <a href="https://www.microcenter.com/site/products/desktop-computers.aspx">Micro Center's desktop page</a> for my responsive redesign. The goal of this page is to help customers find a desktop to suit their needs. Its confusing layout and overemphasis on brand names makes this process extremely difficult instead of seamless. Overall the page seems conflicted in its purpose: it can not decide whether it wants to show you categories of computers or individual desktops.</p>
+        <img src="./assets/screenshot.png">
+        <h2>Finding Problems</h2>
+        <p>In order to effectively redesign the site, I first identified particular problems with the original page:</p>
+        <ul>
+            <li><span class="bold blue">There is no logical hierarchy</span> which dictates the order of what is listed. Simply listing the headings (or implied headings) on the page reveal no sensible direction in the site's construction: Intel vs AMD, advertisements, Best Selling Desktops, Commonly Searched Categories, Shop by Processor: Intel, Shop By Processor: AMD, Shop by Brand, Micro Center Community, Best Selling Pro Desktops, Desktop Accessories, Best Selling Gaming Desktops.</li>
+            <li>The site seems to be <span class="bold red">confused over what archetypes it can group its users into</span>. It makes reference to a “Pro” audience, a “Gaming” audience, and a general user group, but seems conflicted over what computers best cater to these audiences. This is exemplified by the lists of computers it markets to each user group. In particular the “Best Selling Pro Desktops” and the “Best Selling Desktops” lists contain the exact same desktops. </li>
+            <li><span class="bold gold">Legibility</span> is often on a problem on the page. The use of images containing text means that the type is often too small and simply unreadable on smaller screen sizes. Text for much of the page is also often too small to be properly legible.</li>
+            <li>The site <span class="bold green">hides information</span> that would be helpful when browsing the desktop listings rather than displaying it prominently. For example, customers are most interested in the GPU and CPU of the computers they're looking at. Displaying these would get rid of unnecessarily clicking into desktops and would make site navigation much more intentional.</li>
+        </ul>
+        <h2>Accessibility</h2>
+        <p>I used WebAIM WAVE to detect accessibility problems and confirm the ones I suspected when observing the site myself. It detected problems with low constrast as well as many instances of text that was too small to be legible. This confirms my problems with the webpage and lent credence to the need for a redesign.</p>
+
+    </div>
+    <div>
+        <h1>Visual Redesign</h1>
+        <h2>Low-Fidelity Prototyping</h2>
+        <p>To address the problems I found with the original webpage, I designed low-fidelity prototypes for each of the three screen sizes I will be supporting (desktop, tablet, and mobile). On each of the prototypes I annotated how they address the problems outlined above. The color of the annotations match the colors of the problems: </p>
+        <ul>
+            <li class="blue bold">Page Hierarchy</li>
+            <li class="red bold">User Archetypes</li>
+            <li class="gold bold">Legibility</li>
+            <li class="green bold">Information Visibility</li>
+        </ul>
+        <iframe src="./assets/low-fidelity-wireframes.pdf" width="100%" height="700" style="border: 1px solid rgba(112, 105, 105, 0.1);" width="100%" allowfullscreen></iframe>
+        <h2>Visual Design Style Guide</h2>
+        <p>Before I started my high-fidelity prototype I created a style guide that displays the main colors, typography, and reusable components that are used in the design. The category images I used for the style guide and for the high fidelity design were taken from <a href="https://iconscout.com/?gclid=Cj0KCQjwhsmaBhCvARIsAIbEbH6uKVRgQGuYdqv1MawrIc8pw6wvkxlxHw7Xyg3khxj6W-ZsC_lynREaAsBHEALw_wcB">IconScout</a>.</p>
+        <img src="./assets/style-guide.png">
+        <h2>High-Fidelity Prototyping</h2>
+        <p>After getting a rough design of the website done, it was time to focus on the details. I created a high-fidelity prototype of the website for each of the supported screen sizes (desktop, tablet, and mobile). I used Figma's prototyping capabilities to make the desktop version of the site somewhat functional.  Annotations outline some of the HTML and CSS properties necessary to achieve this design.</p>
+        <iframe style="border: 1px solid rgba(112, 105, 105, 0.1);" width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FdpyTpXgueo96BMM3wPi4KD%2FUntitled%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <h1>Responsive Redesign</h1>
+        <h2>The Final Product</h2>
+        <p>Once the high-fidelity prototype was done, I used HTML, CSS, and javascript to create a functional version of the <a href="https://happykoala482.github.io/responsive-redesign/">redesigned website</a>. The right and left arrows on the category bar are functional and they change the related page details accordingly!</p>
+        <img src="./assets/redesign.png">
+        <h2>Coding Sources</h2>
+        <ul>
+            <li><a href=https://codepen.io/giuseppebianchi/pen/MwoMBa>Horizontal carousel</a></li>
+            <li><a href="http://jsfiddle.net/Zw4QA/1/">Drop shadows for a div</a></li>
+            <li><a href="https://imagekit.io/blog/how-to-resize-image-in-html/#:~:text=You%20can%20preserve%20the%20aspect,to%20auto%20using%20CSS%20property.&text=This%20will%20render%20a%20400px,ratio%20of%20the%20original%20image">Maintaing aspect ratio of images</a></li>
+            <li><a href="https://stackoverflow.com/questions/4467539/javascript-modulo-gives-a-negative-result-for-negative-numbers">Modulo in javascript</a></li>
+        </ul>
+    </div>
+    <div>
+        
+    </div>
+
+    <div>
+       
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,76 @@
+html {
+    margin:    0 auto;
+    max-width: 1240px;
+    font-family: Inter, sans-serif;
+    background-color: white;
+    line-height: 200%;
+}
+
+div {
+    margin: 50px;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.green {
+    color: #02C093;
+}
+
+.blue {
+    color: #1B91FF;
+}
+
+.red {
+    color: #FF5656;
+}
+
+.gold {
+    color: #CEA100;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+li {
+    padding: 5px;
+    font-size: 1.25rem;
+}
+
+h1 {
+    color: #7452FF;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+h2 {
+    margin-top: 30px;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Uncomment below if images are way too big.
+Selects all image tags and makes them 500px;
+*/
+
+.gallery-item {
+    width: 381px;
+    height: 573px;
+    padding: 0px;
+}
+
+.gallery-container {
+/* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: safe center;
+}
